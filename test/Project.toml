@@ -1,0 +1,16 @@
+[deps]
+assimp_jll = "54ae6823-98c6-5a7c-8365-5a43b909f91f"
+CBinding = "d43a6710-96b8-4a2d-833c-c424785e5374"
+CImGui_jll = "7dd61d3b-0da5-5c94-bbf9-a0296c6e3925"
+Clang_jll = "0ee61d77-7f21-5576-8119-9fcc46b10100"
+CSFML_jll = "042b324c-54b6-5061-9eb0-54e31a36d6ad"
+SDL2_gfx_jll = "323748d4-b4be-59be-a22c-1904c60787cb"
+SDL2_image_jll = "41f3cfe1-fd11-58ad-8074-b9730c29438b"
+SDL2_jll = "ab825dc5-c88e-5901-9575-1e5e20358fcf"
+SDL2_mixer_jll = "7e88e5ca-120e-58e7-9660-b2187fd466c0"
+SDL2_ttf_jll = "ca9d4746-8a27-5104-babe-80f83b336947"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+Vulkan_Headers_jll = "8d446b21-f3ad-5576-a034-752265b9b6f9"
+
+[compat]
+CBinding = '^1'

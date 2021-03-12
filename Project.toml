@@ -1,0 +1,7 @@
+name = "ExamplesUsingCBinding"
+uuid = "9f0e9e87-112e-4cef-8c1a-1ad00d1dacb1"
+authors = ["Keith Rutkowski <keith@analytech-solutions.com>"]
+version = "0.1.0"
+
+[compat]
+julia = "^1.5"
