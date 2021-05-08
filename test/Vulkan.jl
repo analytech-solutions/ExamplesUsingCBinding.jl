@@ -4,8 +4,7 @@ module libvulkan
 	
 	c`$([
 		"-I$(Vulkan_Headers_jll.artifact_dir)/include",
-		"-DVK_ENABLE_BETA_EXTENSIONS",
-		# TODO: add dependencies used when other extensions are enabled
+		"-DVK_NO_PROTOTYPES",
 	])`
 	
 	const c"int8_t" = Int8
