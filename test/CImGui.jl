@@ -2,7 +2,7 @@ module libcimgui
 	using CBinding
 	using CImGui_jll
 	
-	c`-I$(CImGui_jll.artifact_dir)/include -L$(dirname(CImGui_jll.libcimgui_path)) -lcimgui`
+	c`-DCIMGUI_DEFINE_ENUMS_AND_STRUCTS=1 -I$(CImGui_jll.artifact_dir)/include -L$(dirname(CImGui_jll.libcimgui_path)) -lcimgui`
 	
 	const c"int8_t" = Int8
 	const c"int16_t" = Int16
@@ -19,6 +19,6 @@ module libcimgui
 	const c"va_list" = Cvoid
 	
 	c"""
-		#include <helper.h>
+		#include <cimgui.h>
 	"""ji
 end
