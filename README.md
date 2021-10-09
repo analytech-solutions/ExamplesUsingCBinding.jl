@@ -2,7 +2,7 @@
 
 [![Build Status](https://github.com/analytech-solutions/ExamplesUsingCBinding.jl/workflows/CI/badge.svg)](https://github.com/analytech-solutions/ExamplesUsingCBinding.jl/actions)
 
-Some examples of using CBinding.jl in modules to interface C libraries (found in the `test` directory).
+Some examples of using [CBinding.jl](https://github.com/analytech-solutions/CBinding.jl) in modules to interface C libraries (found in the `test` directory).
 
 - [`test/assimp.jl`](https://github.com/analytech-solutions/ExamplesUsingCBinding.jl/blob/master/test/assimp.jl)
 - [`test/CImGui.jl`](https://github.com/analytech-solutions/ExamplesUsingCBinding.jl/blob/master/test/CImGui.jl)
