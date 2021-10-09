@@ -2,7 +2,7 @@ module libsdl2
 	using CBinding
 	using SDL2_jll
 	
-	c`-I$(SDL2_jll.artifact_dir)/include -L$(dirname(SDL2_jll.libsdl2_path)) -lSDL2`
+	c`-I$(SDL2_jll.artifact_dir)/include -I$(SDL2_jll.artifact_dir)/include/SDL2 -L$(dirname(SDL2_jll.libsdl2_path)) -lSDL2`
 	
 	const c"int8_t" = Int8
 	const c"int16_t" = Int16
@@ -31,7 +31,7 @@ module libsdl2_image
 	using ..libsdl2
 	using SDL2_image_jll
 	
-	c`-I$(libsdl2.SDL2_jll.artifact_dir)/include -L$(dirname(libsdl2.SDL2_jll.libsdl2_path)) -lSDL2 -I$(SDL2_image_jll.artifact_dir)/include -L$(dirname(SDL2_image_jll.libsdl2_image_path)) -lSDL2_image`
+	c`-I$(libsdl2.SDL2_jll.artifact_dir)/include -I$(libsdl2.SDL2_jll.artifact_dir)/include/SDL2 -L$(dirname(libsdl2.SDL2_jll.libsdl2_path)) -lSDL2 -I$(SDL2_image_jll.artifact_dir)/include -I$(SDL2_image_jll.artifact_dir)/include/SDL2 -L$(dirname(SDL2_image_jll.libsdl2_image_path)) -lSDL2_image`
 	
 	const c"int8_t" = Int8
 	const c"int16_t" = Int16
@@ -63,7 +63,7 @@ module libsdl2_mixer
 	using ..libsdl2
 	using SDL2_mixer_jll
 	
-	c`-I$(libsdl2.SDL2_jll.artifact_dir)/include -L$(dirname(libsdl2.SDL2_jll.libsdl2_path)) -lSDL2 -I$(SDL2_mixer_jll.artifact_dir)/include -L$(dirname(SDL2_mixer_jll.libsdl2_mixer_path)) -lSDL2_mixer`
+	c`-I$(libsdl2.SDL2_jll.artifact_dir)/include -I$(libsdl2.SDL2_jll.artifact_dir)/include/SDL2 -L$(dirname(libsdl2.SDL2_jll.libsdl2_path)) -lSDL2 -I$(SDL2_mixer_jll.artifact_dir)/include -I$(SDL2_mixer_jll.artifact_dir)/include/SDL2 -L$(dirname(SDL2_mixer_jll.libsdl2_mixer_path)) -lSDL2_mixer`
 	
 	const c"int8_t" = Int8
 	const c"int16_t" = Int16
@@ -95,7 +95,7 @@ module libsdl2_gfx
 	using ..libsdl2
 	using SDL2_gfx_jll
 	
-	c`-I$(libsdl2.SDL2_jll.artifact_dir)/include -L$(dirname(libsdl2.SDL2_jll.libsdl2_path)) -lSDL2 -I$(SDL2_gfx_jll.artifact_dir)/include -L$(dirname(SDL2_gfx_jll.libsdl2_gfx_path)) -lSDL2_gfx`
+	c`-I$(libsdl2.SDL2_jll.artifact_dir)/include -I$(libsdl2.SDL2_jll.artifact_dir)/include/SDL2 -L$(dirname(libsdl2.SDL2_jll.libsdl2_path)) -lSDL2 -I$(SDL2_gfx_jll.artifact_dir)/include -I$(SDL2_gfx_jll.artifact_dir)/include/SDL2 -L$(dirname(SDL2_gfx_jll.libsdl2_gfx_path)) -lSDL2_gfx`
 	
 	const c"int8_t" = Int8
 	const c"int16_t" = Int16
@@ -130,7 +130,7 @@ module libsdl2_ttf
 	using ..libsdl2
 	using SDL2_ttf_jll
 	
-	c`-I$(libsdl2.SDL2_jll.artifact_dir)/include -L$(dirname(libsdl2.SDL2_jll.libsdl2_path)) -lSDL2 -I$(SDL2_ttf_jll.artifact_dir)/include -L$(dirname(SDL2_ttf_jll.libsdl2_ttf_path)) -lSDL2_ttf`
+	c`-I$(libsdl2.SDL2_jll.artifact_dir)/include -I$(libsdl2.SDL2_jll.artifact_dir)/include/SDL2 -L$(dirname(libsdl2.SDL2_jll.libsdl2_path)) -lSDL2 -I$(SDL2_ttf_jll.artifact_dir)/include -I$(SDL2_ttf_jll.artifact_dir)/include/SDL2 -L$(dirname(SDL2_ttf_jll.libsdl2_ttf_path)) -lSDL2_ttf`
 	
 	const c"int8_t" = Int8
 	const c"int16_t" = Int16
