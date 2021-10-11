@@ -3,6 +3,8 @@ module libvulkan
 	using Vulkan_Headers_jll
 	
 	c`$([
+		Main.SYSROOT...,
+		
 		"-I$(Vulkan_Headers_jll.artifact_dir)/include",
 		"-DVK_NO_PROTOTYPES",
 	])`

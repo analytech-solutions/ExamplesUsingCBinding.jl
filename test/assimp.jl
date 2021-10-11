@@ -2,7 +2,12 @@ module libassimp
 	using CBinding
 	using assimp_jll
 	
-	c`-I$(assimp_jll.artifact_dir)/include -L$(dirname(assimp_jll.libassimp_path)) -lassimp`
+	c`$([
+		Main.SYSROOT...,
+		
+		"-I$(assimp_jll.artifact_dir)/include",
+		"-L$(dirname(assimp_jll.libassimp_path))", "-lassimp",
+	])`
 	
 	const c"int8_t" = Int8
 	const c"int16_t" = Int16
